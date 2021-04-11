@@ -26,7 +26,8 @@ namespace DataAccess.Concrete.EntityFramework
                                  FirstName = user.FirstName,
                                  LastName = user.LastName,
                                  Email = user.Email,
-                                 Password = Convert.ToString(user.PasswordHash) // JWT ile bozulmuştu, yanlış olabilir.
+                                 Password = Convert.ToString(user.PasswordHash), // JWT ile bozulmuştu, yanlış olabilir.
+                                 FindexScore = cust.FindexScore
                              };
                 return result.ToList();
             }

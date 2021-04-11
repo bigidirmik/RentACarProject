@@ -35,6 +35,7 @@ namespace DataAccess.Concrete.EntityFramework
                                  Description = car.Description,
                                  ModelYear = car.ModelYear,
                                  DailyPrice = car.DailyPrice,
+                                 FindexScore = car.FindexScore,
                                  ImagePath = (from cImg in context.CarImages where cImg.CarId == car.CarId select cImg.ImagePath).FirstOrDefault()
                              };
                 return result.ToList();
@@ -65,6 +66,7 @@ namespace DataAccess.Concrete.EntityFramework
                                  Description = car.Description,
                                  ModelYear = car.ModelYear,
                                  DailyPrice = car.DailyPrice,
+                                 FindexScore = car.FindexScore,
                                  ImagePath = (from cImg in context.CarImages where cImg.CarId == car.CarId select cImg.ImagePath).FirstOrDefault()
                              };
                 return result.ToList();
@@ -95,6 +97,7 @@ namespace DataAccess.Concrete.EntityFramework
                                  Description = car.Description,
                                  ModelYear = car.ModelYear,
                                  DailyPrice = car.DailyPrice,
+                                 FindexScore = car.FindexScore,
                                  ImagePath = (from cImg in context.CarImages where cImg.CarId == car.CarId select cImg.ImagePath).FirstOrDefault()
                              };
                 return result.ToList();
@@ -125,6 +128,7 @@ namespace DataAccess.Concrete.EntityFramework
                                  Description = car.Description,
                                  ModelYear = car.ModelYear,
                                  DailyPrice = car.DailyPrice,
+                                 FindexScore = car.FindexScore,
                                  ImagePath = (from cImg in context.CarImages where cImg.CarId == car.CarId select cImg.ImagePath).FirstOrDefault()
                              };
                 return result.ToList();
@@ -155,6 +159,7 @@ namespace DataAccess.Concrete.EntityFramework
                                  Description = car.Description,
                                  ModelYear = car.ModelYear,
                                  DailyPrice = car.DailyPrice,
+                                 FindexScore = car.FindexScore,
                                  ImagePath = (from cImg in context.CarImages where cImg.CarId == car.CarId select cImg.ImagePath).FirstOrDefault()
                              };
                 return result.ToList();
